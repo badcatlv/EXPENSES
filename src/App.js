@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Banner from './components/banner';
 
 function App() {
+  const DUMMY_DATA = [{
+    id: 0,
+    date: "01/01",
+    name: "cookies",
+    prices: 3.99,
+  },
+  {
+    id: 1,
+    date: "02/02",
+    name: "Eggs",
+    prices: 8.99,
+  },
+  {
+    id: 2,
+    date: '03/03',
+    name: "bread",
+    prices: 4.99
+  }]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
     </div>
   );
 }

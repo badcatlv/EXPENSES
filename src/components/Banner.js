@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from "./Banner.css"
+import "./Banner.css"
 
 export default function Banner(props) {
   return (
-    <div>{props.date} {props.name} {props.price}</div>
+    <h1 id="banner">Expense Tracker</h1>
   );
 }
